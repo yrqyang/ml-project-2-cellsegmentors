@@ -16,7 +16,7 @@ torch.set_printoptions(6)
 
 
 def _get_setups(args):
-    """Get configuration"""
+    """Get experiment configuration"""
 
     # Set model
     model_args = args.train_setups.model
@@ -56,12 +56,12 @@ def _get_setups(args):
         trainer.no_valid = True
 
     # Set public dataloader
-    if args.data_setups.public.enabled:
-        dataloaders = datasetter.get_dataloaders_public(
-            **args.data_setups.public.params
-        )
-        trainer.public_loader = dataloaders["public"]
-        trainer.public_iterator = iter(dataloaders["public"])
+    # if args.data_setups.public.enabled:
+    #    dataloaders = datasetter.get_dataloaders_public(
+    #        **args.data_setups.public.params
+    #    )
+    #    trainer.public_loader = dataloaders["public"]
+    #    trainer.public_iterator = iter(dataloaders["public"])
 
     return trainer
 
