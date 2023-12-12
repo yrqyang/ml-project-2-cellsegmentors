@@ -13,7 +13,7 @@
 ## Model: 
 
 - Pretrained model: [Mediar-Former](https://github.com/Lee-Gihun/MEDIAR) is the "1st winner" in the [NeurIPS-2022 Cell Segmentation Challenge](https://neurips22-cellseg.grand-challenge.org/)
-- Prediction model: Ensembled predictor combined with the model and fine-tuned generalist cell segmentation model
+- Predictor: Ensembled with the model and fine-tuned generalist cell segmentation model
 
 ## Environment Setup:
 
