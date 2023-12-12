@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 
 from core.BaseTrainer import BaseTrainer
 from core.Baseline.utils import create_interior_onehot, identify_instances_from_classmap
-from train_tools.measures import evaluate_f1_score_cellseg
+from evaluation.measures import evaluate_f1_score_cellseg
 from tqdm import tqdm
 
 __all__ = ["Trainer"]

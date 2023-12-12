@@ -16,7 +16,7 @@ import copy
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
 
 from core.utils import print_learning_device, print_with_logging
-from train_tools.measures import evaluate_f1_score_cellseg
+from evaluation.measures import evaluate_f1_score_cellseg
 
 
 class BaseTrainer:

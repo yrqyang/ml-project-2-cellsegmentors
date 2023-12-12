@@ -3,8 +3,7 @@ import torch.optim.lr_scheduler as lr_scheduler
 import monai
 
 import core
-from train_tools import models
-from train_tools.models import *
+import models
 
 __all__ = ["TRAINER", "OPTIMIZER", "SCHEDULER"]
 
