@@ -3,7 +3,6 @@
 *.ipynb
 *.ipynb_checkpoints/
 __pycache__/
-*/__pycache__/
 results/
 weights/
 wandb/
@@ -17,3 +16,4 @@ submissions/
 *.out
 *.zip
 *.tiff
+*.pyc
