@@ -1,5 +1,7 @@
 # Yeast Cell Segmentation with Generalist Deep Neural Network Mediar-Former 
 
+**Group members:** Yanruiqi Yang(#346510), Yasmine Chaker(#), Ameer Elkhayat(#)
+
 ## Data preparation:
 
 1. Training Dataset:
@@ -13,7 +15,7 @@
 Pretrained model: [Mediar-Former](https://github.com/Lee-Gihun/MEDIAR) is the "1st winner" in the [NeurIPS-2022 Cell Segmentation Challenge](https://neurips22-cellseg.grand-challenge.org/)
 Prediction model: Ensembled predictor combined with the model and fine-tuned generalist cell segmentation model
 
-## Environment:
+## Environment Setup:
 
 ## Training:
 
@@ -23,4 +25,5 @@ Prediction model: Ensembled predictor combined with the model and fine-tuned gen
 
 ## Reference:
 
-1. [YeastNet: Deep-Learning-Enabled Accurate Segmentation of Budding Yeast Cells in Bright-Field Microscopy](https://www.mdpi.com/2076-3417/11/6/2692/htm)
+1. [MEDIAR: Harmony of Data-Centric and Model-Centric for Multi-Modality Microscopy](https://arxiv.org/abs/2212.03465)
+2. [YeastNet: Deep-Learning-Enabled Accurate Segmentation of Budding Yeast Cells in Bright-Field Microscopy](https://www.mdpi.com/2076-3417/11/6/2692/htm)
