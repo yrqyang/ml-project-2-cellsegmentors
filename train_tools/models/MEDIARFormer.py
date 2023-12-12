@@ -4,13 +4,12 @@ import os, sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 
-from segmentation_models_pytorch import MAnet
-from segmentation_models_pytorch.base.modules import Activation
+import segmentation_models_pytorch as smp
 
 __all__ = ["MEDIARFormer"]
 
 
-class MEDIARFormer(MAnet):
+class MEDIARFormer(smp.MAnet):
     """MEDIAR-Former Model"""
 
     def __init__(
@@ -86,7 +85,7 @@ class DeepSegmantationHead(nn.Sequential):
             if upsampling > 1
             else nn.Identity()
         )
-        activation = Activation(activation)
+        activation = smp.base.modules.Activation(activation)
         super().__init__(conv2d_1, mish, bn, conv2d_2, upsampling, activation)
 
 
