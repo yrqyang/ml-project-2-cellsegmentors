@@ -7,7 +7,7 @@
 1. Training Dataset:
    906 yeast cell microscopy images with labels, provided by Prof. Sahand Jamal Rahi (Laboratory of the Physics of Biological Systems, LPBS), in the format of .tif;
 2. Evaluation Dataset:
-   The [Yeast Image Toolkit](http://yeast-image-toolkit.biosim.eu/pmwiki.php) (Dataset 1, Dataset 2, and Dataset 3)
+   The [Yeast Image Toolkit](http://yeast-image-toolkit.biosim.eu/pmwiki.php) (Dataset 1, Dataset 3)
 
    
 ## Model: 
