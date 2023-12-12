@@ -28,9 +28,9 @@
         "trainer": {
             "name": "mediar",
             "params": {            
-                "num_epochs": 200,
+                "num_epochs": 60,
                 "valid_frequency": 1,
-                "device": "cpu",
+                "device": "cuda:0",
                 "amp": true,
                 "algo_params": {"with_public": false}
             }
