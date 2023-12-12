@@ -62,20 +62,8 @@ if __name__ == "__main__":
 
     print("\n----------- Path Mapping for Labeled Data is Started... -----------\n")
 
-    map_labeled = os.path.join(MAP_DIR, "mapping_labeled2.json")
+    map_labeled = os.path.join(MAP_DIR, "mapping_labeled.json")
     map_dict = official_paths_labeled(args.root)
     add_mapping_to_json(map_labeled, map_dict)
-
-    # print("\n----------- Path Mapping for Tuning Data is Started... -----------\n")
-
-    # map_labeled = os.path.join(MAP_DIR, "mapping_tuning.json")
-    # map_dict = official_paths_tuning(args.root)
-    # add_mapping_to_json(map_labeled, map_dict)
-
-    # print("\n----------- Path Mapping for Public Data is Started... -----------\n")
-
-    # map_public = os.path.join(MAP_DIR, "mapping_public.json")
-    # map_dict = public_paths_labeled(args.root)
-    # add_mapping_to_json(map_public, map_dict)
 
     print("\n-------------- Path Mapping is Ended !!! ---------------------------\n")
