@@ -26,7 +26,7 @@ def get_dataloaders_labeled(
     # mapping_file_tuning,
     # join_mapping_file=None,
     valid_portion=0.0,
-    batch_size=8,
+    batch_size=1,
     amplified=False,
     # relabel=False,
 ):

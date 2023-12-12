@@ -22,7 +22,7 @@ class Trainer(BaseTrainer):
         scheduler=None,
         criterion=None,
         num_epochs=100,
-        device="cpu", #"cuda:0",
+        device="cuda:0",
         no_valid=False,
         valid_frequency=1,
         amp=False,

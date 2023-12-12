@@ -3,10 +3,10 @@ from .custom import *
 
 __all__ = [
     "train_transforms",
-    "public_transforms",
+    #"public_transforms",
     "valid_transforms",
-    "tuning_transforms",
-    "unlabeled_transforms",
+    #"tuning_transforms",
+    #"unlabeled_transforms",
 ]
 
 # Define a custom callback to print the size of img and label
@@ -17,11 +17,11 @@ class PrintSizeCallback:
         print(f"img size: {img_size}, label size: {label_size}")
         return data
 
+
 train_transforms = Compose(
     [
         # >>> Load and refine data --- img: (H, W, 3); label: (H, W)
         CustomLoadImaged(keys=["img", "label"]),
-        #PrintSizeCallback(),
         CustomNormalizeImaged(
             keys=["img"],
             allow_missing_keys=True,
@@ -66,7 +66,7 @@ train_transforms = Compose(
 #             channel_wise=False,
 #             percentiles=[0.0, 99.5],
 #         ),
-#         AsChannelFirstd(keys=["img", "label"], channel_dim=-1),
+#         #AsChannelFirstd(keys=["img", "label"], channel_dim=-1),
 #         RemoveRepeatedChanneld(keys=["label"], repeats=3),  # label: (H, W)
 #         ScaleIntensityd(keys=["img"], allow_missing_keys=True),  # Do not scale label
 #         # >>> Spatial transforms
@@ -104,7 +104,7 @@ valid_transforms = Compose(
 #             channel_wise=False,
 #             percentiles=[0.0, 99.5],
 #         ),
-#         AsChannelFirstd(keys=["img"], channel_dim=-1),
+#         #AsChannelFirstd(keys=["img"], channel_dim=-1),
 #         ScaleIntensityd(keys=["img"]),
 #         EnsureTyped(keys=["img"]),
 #     ]
@@ -120,7 +120,7 @@ valid_transforms = Compose(
 #             channel_wise=False,
 #             percentiles=[0.0, 99.5],
 #         ),
-#         AsChannelFirstd(keys=["img"], channel_dim=-1),
+#         #AsChannelFirstd(keys=["img"], channel_dim=-1),
 #         RandZoomd(
 #             keys=["img"],
 #             prob=0.5,
