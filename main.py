@@ -55,14 +55,6 @@ def _get_setups(args):
     if args.data_setups.labeled.valid_portion == 0:
         trainer.no_valid = True
 
-    # Set public dataloader
-    # if args.data_setups.public.enabled:
-    #    dataloaders = datasetter.get_dataloaders_public(
-    #        **args.data_setups.public.params
-    #    )
-    #    trainer.public_loader = dataloaders["public"]
-    #    trainer.public_iterator = iter(dataloaders["public"])
-
     return trainer
 
 
