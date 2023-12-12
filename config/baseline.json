@@ -1,17 +1,10 @@
 {
     "data_setups":{
         "labeled":{
-            "root": "/home/gihun/data/CellSeg/",
+            "root": "./Dataset",
             "mapping_file": "./train_tools/data_utils/mapping_labeled.json",
-            "tuning_mapping_file": "/home/gihun/CellSeg/train_tools/data_utils/mapping_tuning.json",
             "batch_size": 8, 
             "valid_portion": 0.1
-        },
-        "unlabeled":{
-            "enabled": false
-        },
-        "public":{
-            "enabled": false
         }        
     },
     "train_setups":{
@@ -30,7 +23,7 @@
         "trainer": {
             "name": "baseline",
             "params": {            
-                "num_epochs": 200,
+                "num_epochs": 60,
                 "valid_frequency": 1,
                 "device": "cuda:0",
                 "algo_params": {}
@@ -46,7 +39,7 @@
         "seed": 19940817
     },
     "pred_setups":{
-        "input_path":"/home/gihun/data/CellSeg/Official/TuningSet",
+        "input_path":"./Dataset/eval",
         "output_path": "./results/baseline",
         "make_submission": true,
         "exp_name": "baseline",

@@ -47,8 +47,8 @@
         "seed": 19940817
     },
     "pred_setups":{
-        "input_path":"./Dataset/images",
-        "output_path": "./mediar_yeastCell",
+        "input_path":"./Dataset/eval",
+        "output_path": "./results/mediar_yeastCell",
         "make_submission": true,
         "exp_name": "mediar_yeastCell",
         "algo_params": {"use_tta": false}
