@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     MAP_DIR = "./train_tools/data_utils/"
 
-    print("\n----------- Path Mapping for Labeled Data is Started... -----------\n")
+    print("\n----------- Path Mapping is Started... -----------\n")
 
     map_labeled = os.path.join(MAP_DIR, "mapping_labeled.json")
     map_dict = official_paths_labeled(args.root)
