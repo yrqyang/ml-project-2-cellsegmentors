@@ -4,8 +4,6 @@ from .custom import *
 __all__ = [
     "train_transforms",
     "valid_transforms",
-    #"tuning_transforms",
-    #"unlabeled_transforms",
 ]
 
 # Define a custom callback to print the size of img and label
