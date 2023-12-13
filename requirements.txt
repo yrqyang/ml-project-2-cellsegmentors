@@ -15,5 +15,5 @@ tqdm==4.64.1
 pillow==9.0.1
 efficientnet_pytorch==0.7.1
 segmentation_models_pytorch==0.3.3
-wandb==0.16.1
 cuba==0.0.1
+wandb==0.16.1
