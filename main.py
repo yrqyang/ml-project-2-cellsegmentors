@@ -3,8 +3,10 @@ import os
 import wandb
 import argparse, pprint
 
-from utils import *
 from dataloader import *
+from models import *
+from evaluation import *
+from utils import *
 from SetupDict import TRAINER, OPTIMIZER, SCHEDULER, MODELS, PREDICTOR
 
 # Ignore warnings for tiffle image reading
