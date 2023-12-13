@@ -3,7 +3,8 @@ import os
 import wandb
 import argparse, pprint
 
-from train_tools import *
+from utils import *
+from dataloader import *
 from SetupDict import TRAINER, OPTIMIZER, SCHEDULER, MODELS, PREDICTOR
 
 # Ignore warnings for tiffle image reading
@@ -101,7 +102,7 @@ def main(args):
 
 # Parser arguments for terminal execution
 parser = argparse.ArgumentParser(description="Config file processing")
-parser.add_argument("--config_path", default="./config/mediar_train.json", type=str)
+parser.add_argument("--config_path", default="./config/baseline.json", type=str)
 args = parser.parse_args()
 
 #######################################################################################

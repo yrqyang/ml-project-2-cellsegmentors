@@ -1,7 +1,7 @@
 import torch
 import argparse, pprint
 
-from train_tools import *
+from utils import *
 from SetupDict import MODELS, PREDICTOR
 
 # Set torch base print precision
@@ -53,7 +53,7 @@ def main(args):
 # Parser arguments for terminal execution
 parser = argparse.ArgumentParser(description="Config file processing")
 parser.add_argument(
-    "--config_path", default="./config/step3_prediction/base_prediction.json", type=str
+    "--config_path", default="./config/base_prediction.json", type=str
 )
 args = parser.parse_args()
 

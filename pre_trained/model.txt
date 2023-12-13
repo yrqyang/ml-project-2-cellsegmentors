@@ -1,0 +1,2 @@
+Pre-trained model download path: https://drive.google.com/file/d/1rTvjJXu5RUtOKiV40RwWxpBTZ5ZSHzcE
+To reproduce this project, please download it and put it under this directory (./pre_trained/main_model.pth)

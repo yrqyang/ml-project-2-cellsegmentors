@@ -6,7 +6,7 @@ __pycache__/
 results/
 weights/
 wandb/
-data/
+Dataset/
 submissions/
 /.vscode
 *.npy
