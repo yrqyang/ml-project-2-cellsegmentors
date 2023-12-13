@@ -15,7 +15,7 @@ import copy
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
 
-from core.utils import print_learning_device, print_with_logging
+from utils.print_learning import print_learning_device, print_with_logging
 from evaluation.measures import evaluate_f1_score_cellseg
 
 

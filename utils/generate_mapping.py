@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser.add_argument("--root", default=".", type=str)
     args = parser.parse_args()
 
-    MAP_DIR = "./train_tools/data_utils/"
+    MAP_DIR = "./dataloader/"
 
     print("\n----------- Path Mapping is Started... -----------\n")
 
