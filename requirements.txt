@@ -13,3 +13,5 @@ torch==1.12.1
 torchvision==0.13.1
 tqdm==4.64.1
 pillow==9.0.1
+segmentation_models_pytorch==0.3.3
+wandb==0.16.1
